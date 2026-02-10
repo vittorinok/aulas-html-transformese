@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS em HTML</title>
+    
+</head>
+<body>
+    <h1>Primeiro JavaScript em HTML</h1>
+    <p>Dando a luz ao JavaScript! Ensinando a viver.</p>
+
+
+    <script>
+
+        function luz(estado) {
+            var foto;
+
+            if (estado == 0) {
+                foto = 'pic_bulboff.gif';
+            } else { 
+                foto = 'pic_bulbon.gif';
+            }
+
+            document.getElementById('img').src = foto;
+
+        }
+
+    </script>
+
+
+
+    <img id="img" src="pic_bulboff.gif">
+
+    <p>
+        <button type="button" onclick="luz(1)">Acendeu</button>
+        <button type="button" onclick="luz(0)">É o fim.</button>
+    </p>
+</body>
+</html>
